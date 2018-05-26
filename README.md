@@ -27,13 +27,16 @@ Install Deps:
 
 Run:
 
+```
 	python generate.py
   python generate_small.py
+```
 
 For Text Cloud:
-
+```
     touch ~/.matplotlib/matplotlibrc
     echo "backend: TkAgg" >> ~/.matplotlib/matplotlibrc
+```
 
 License
 ---
