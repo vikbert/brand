@@ -5,29 +5,18 @@
 Usage
 ---
 
-[![vikbert's Idea](./shields/article.svg)]()
+[![vikbert's Idea](./shields/article-small.svg)]()
 
-[![vikbert's Article](./shields/idea.svg)]()
+[![vikbert's Article](./shields/book-small.svg)]()
 
-[![vikbert's Article](./shields/works.svg)]()
-
-
-Titles
----
-
-![vikbert's Title]()
+[![vikbert's Article](./shields/idea-small.svg)]()
 
 
 Cover
 ---
 
-![vikbert's Title]()
+![vikbert's Title](./shields/orange.svg)
 
-
-Logo
----
-
-![vikbert's Logo]()
 
 Setup
 ---
