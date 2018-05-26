@@ -6,7 +6,7 @@ from svgwrite.container import Hyperlink
 phodal_width = 176
 secondary_text_x = 200
 basic_text_y = 35
-author='xzhou'
+author='vikbert'
 
 
 def generate_idea():
