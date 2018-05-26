@@ -2,7 +2,7 @@
 
 > Design for Fun
 
-Usage
+Samples of outputs
 ---
 
 [![vikbert's Idea](./shields/article-small.svg)]()
@@ -12,7 +12,7 @@ Usage
 [![vikbert's Article](./shields/idea-small.svg)]()
 
 
-Cover
+Sample of Cover Image of blog article
 ---
 
 ![vikbert's Title](./shields/orange.svg)
