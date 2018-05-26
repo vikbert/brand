@@ -6,7 +6,7 @@ from svgwrite.container import Hyperlink
 phodal_width = 528
 secondary_text_x = 588
 basic_text_y = 119
-
+author='vikbert'
 
 def generate_idea():
     y_text_split = phodal_width + 1
@@ -28,11 +28,11 @@ def generate_idea():
     shapes = dwg.add(dwg.g(id='shapes', fill='none'))
 
     slogan_link = Hyperlink('https://www.phodal.com/', target='_blank')
-    shapes.add(dwg.text('phodal', insert=(84, basic_text_y + 1), fill='#000', fill_opacity=0.3, font_size=120,
+    shapes.add(dwg.text(author, insert=(84, basic_text_y + 1), fill='#000', fill_opacity=0.3, font_size=120,
                         font_family='Helvetica'))
 
     slogan_link.add(
-        dwg.text('phodal', insert=(83, basic_text_y), fill='#FFFFFF', font_size=120, font_family='Helvetica'))
+        dwg.text(author, insert=(83, basic_text_y), fill='#FFFFFF', font_size=120, font_family='Helvetica'))
     dwg.add(slogan_link)
 
     def draw_for_bg_plus():
@@ -76,10 +76,10 @@ def generate_article():
     shapes = dwg.add(dwg.g(id='shapes', fill='none'))
 
     slogan_link = Hyperlink('https://www.phodal.com/', target='_blank')
-    shapes.add(dwg.text('phodal', insert=(84, basic_text_y + 1), fill='#000', fill_opacity=0.3, font_size=120,
+    shapes.add(dwg.text(author, insert=(84, basic_text_y + 1), fill='#000', fill_opacity=0.3, font_size=120,
                         font_family='Helvetica'))
     slogan_link.add(
-        dwg.text('phodal', insert=(83, basic_text_y), fill='#FFFFFF', font_size=120, font_family='Helvetica'))
+        dwg.text(author, insert=(83, basic_text_y), fill='#FFFFFF', font_size=120, font_family='Helvetica'))
     dwg.add(slogan_link)
 
     g.add(dwg.text(insert=(phodal_width, 16), fill='#34495e', opacity=0.2, font_size=12,
@@ -145,10 +145,10 @@ def generate_works():
     g.add(dwg.rect((0, 0), (phodal_width, height), fill='#5E6772'))
 
     slogan_link = Hyperlink('https://www.phodal.com/', target='_blank')
-    shapes.add(dwg.text('phodal', insert=(84, basic_text_y + 1), fill='#000', fill_opacity=0.3, font_size=120,
+    shapes.add(dwg.text(author, insert=(84, basic_text_y + 1), fill='#000', fill_opacity=0.3, font_size=120,
                         font_family='Helvetica'))
     slogan_link.add(
-        dwg.text('phodal', insert=(83, basic_text_y), fill='#FFFFFF', font_size=120, font_family='Helvetica'))
+        dwg.text(author, insert=(83, basic_text_y), fill='#FFFFFF', font_size=120, font_family='Helvetica'))
     dwg.add(slogan_link)
 
     shapes.add(dwg.text('works', insert=(secondary_text_x + 1, basic_text_y + 1), fill='#FFFFFF', font_size=120,
@@ -210,10 +210,10 @@ def generate_design():
     draw_d_arround()
 
     slogan_link = Hyperlink('https://www.phodal.com/', target='_blank')
-    shapes.add(dwg.text('phodal', insert=(84, basic_text_y + 1), fill='#000', fill_opacity=0.3, font_size=120,
+    shapes.add(dwg.text(author, insert=(84, basic_text_y + 1), fill='#000', fill_opacity=0.3, font_size=120,
                         font_family='Helvetica'))
     slogan_link.add(
-        dwg.text('phodal', insert=(83, basic_text_y), fill='#FFFFFF', font_size=120, font_family='Helvetica'))
+        dwg.text(author, insert=(83, basic_text_y), fill='#FFFFFF', font_size=120, font_family='Helvetica'))
     dwg.add(slogan_link)
 
     dwg.save()

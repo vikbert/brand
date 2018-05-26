@@ -45,7 +45,7 @@ def generate_article_title(color_name, bg_color, font_color):
     shapes.add(dwg.rect((220, 54), (200, 10), fill=font_color))
     shapes.add(dwg.rect((530, 54), (200, 10), fill=font_color))
 
-    shapes.add(dwg.text('这是一个标题', insert=(475, 100), fill=font_color, font_size=120,
+    shapes.add(dwg.text('This is a blog title', insert=(475, 100), fill=font_color, font_size=120,
                         style="text-anchor: middle; dominant-baseline: hanging;",
                         font_family='Helvetica'))
 
