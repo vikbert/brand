@@ -7,7 +7,7 @@ Samples of outputs
 
 [![vikbert's Idea](./shields/article-small.svg)]()
 
-[![vikbert's Article](./shields/book-small.svg)]()
+[![vikbert's Article](./shields/works-small.svg)]()
 
 [![vikbert's Article](./shields/idea-small.svg)]()
 
@@ -15,7 +15,7 @@ Samples of outputs
 Sample of Cover Image of blog article
 ---
 
-![vikbert's Title](./shields/orange.svg)
+![vikbert's Title](./titles/generate/cover/orange.svg)
 
 
 Setup

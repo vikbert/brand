@@ -15,7 +15,7 @@ def generate_title_by_colors(color_name, bg_color, font_color):
     shapes = dwg.add(dwg.g(id='shapes', fill='none'))
 
     shapes.add(dwg.rect((0, 0), (950, 500), fill='#' + bg_color))
-    shapes.add(dwg.text('JavaScript', insert=(475, 190), fill='#' + font_color, font_size=120,
+    shapes.add(dwg.text('Symfony', insert=(475, 190), fill='#' + font_color, font_size=120,
                         style="text-anchor: middle; dominant-baseline: hanging;",
                         font_family='Helvetica'))
 
