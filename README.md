@@ -15,7 +15,7 @@ Samples of outputs
 Sample of Cover Image of blog article
 ---
 
-![vikbert's Title](./titles/generate/cover/orange.svg)
+![vikbert's Title](./shields/cover/orange.svg)
 
 
 Setup
