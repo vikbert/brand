@@ -58,7 +58,7 @@ def add_bg_watermark(dwg, container_width, container_height, secondary_text_bg):
 
 def generate_idea():
     secondary_text = 'idea'
-    secondary_text_bg = '#2196F3'
+    secondary_text_bg = '#3ca1f2'
     container_width = 290
     container_height = 50
 
@@ -73,7 +73,7 @@ def generate_idea():
 
 def generate_article():
     secondary_text = 'article'
-    secondary_text_bg = '#cebc1c'
+    secondary_text_bg = '#9cf28e'
     container_height = 50
     container_width = 323
 
@@ -88,7 +88,7 @@ def generate_article():
 
 def generate_works():
     secondary_text = 'works'
-    secondary_text_bg = '#2c3e50'
+    secondary_text_bg = '#7699f7'
     container_width = 316
     container_height = 50
 
