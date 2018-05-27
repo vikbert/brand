@@ -4,13 +4,9 @@
 
 Samples of outputs
 ---
-
-[![vikbert's Idea](./shields/article-small.svg)]()
-
-[![vikbert's Article](./shields/works-small.svg)]()
-
 [![vikbert's Article](./shields/idea-small.svg)]()
-
+[![vikbert's Idea](./shields/article-small.svg)]()
+[![vikbert's Article](./shields/works-small.svg)]()
 
 Sample of Cover Image of blog article
 ---
