@@ -1,16 +1,17 @@
+import sys
 import random
 import svgwrite
-
 from svgwrite.container import Hyperlink
 
+
+## predefined constants
+ration_text_width = round(130/7, 2)
 all_text_y = 39
-
 primary_text_bg='#5E6772'
-primary_text_width = 168
-primary_text_x = 19
 primary_text='vikbert'
+primary_text_x = 15 # X-Value of primary text
+primary_text_width = 30 + int(len(primary_text) * ration_text_width) # X-value of primary text bg
 
-secondary_text_x = 195
 
 def add_bg_mask(dwg, radius, container_width, container_height):
     mask_element= dwg.mask((0, 0), (container_width, container_height), id='a')
@@ -56,13 +57,15 @@ def add_bg_watermark(dwg, container_width, container_height, secondary_text_bg):
 
     return dwg
 
-def generate_idea():
-    secondary_text = 'DesignPattern'
+
+def generate(secondary_text):
+    secondary_text_x = primary_text_width + 15
+
     secondary_text_bg = '#2196F3'
-    container_width = 290
+    container_width = 80 + int(len(secondary_text+primary_text) * ration_text_width)
     container_height = 50
 
-    dwg = svgwrite.Drawing('shields/idea-small.svg', profile='full', size=(u'290', u'50'))
+    dwg = svgwrite.Drawing('shields/'+secondary_text +'.svg', profile='full', size=(u'100%', u'100%'))
 
     # draw the background with round border
     dwg = add_bg_mask(dwg, 5, container_width, container_height)
@@ -71,34 +74,6 @@ def generate_idea():
     dwg = add_text_with_shadow(dwg, secondary_text, secondary_text_x, all_text_y)
     dwg.save()
 
-def generate_article():
-    secondary_text = 'Mobile'
-    secondary_text_bg = '#ffeb3b'
-    container_height = 50
-    container_width = 323
-
-    dwg = svgwrite.Drawing('shields/article-small.svg', size=(u'323', u'50'))
-
-    # draw the background with round border
-    dwg = add_bg_mask(dwg, 5, container_width, container_height)
-    dwg = add_bg_watermark(dwg, container_width, container_height, secondary_text_bg)
-    dwg = add_text_with_shadow(dwg, primary_text, primary_text_x, all_text_y)
-    dwg = add_text_with_shadow(dwg, secondary_text, secondary_text_x, all_text_y)
-    dwg.save()
-
-def generate_works():
-    secondary_text = 'Coding'
-    secondary_text_bg = '#7699f7'
-    container_width = 316
-    container_height = 50
-
-    dwg = svgwrite.Drawing('shields/works-small.svg', size=(u'316', u'50'))
-    dwg = add_bg_mask(dwg, 5, container_width, container_height)
-    dwg = add_bg_watermark(dwg, container_width, container_height, secondary_text_bg)
-    dwg = add_text_with_shadow(dwg, primary_text, primary_text_x, all_text_y)
-    dwg = add_text_with_shadow(dwg, secondary_text, secondary_text_x, all_text_y)
-    dwg.save()
-
-generate_idea()
-generate_article()
-generate_works()
+generate('Design')
+generate('Mobile')
+generate('Coding')

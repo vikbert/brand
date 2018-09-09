@@ -27,7 +27,7 @@ def generate_idea():
 
     shapes = dwg.add(dwg.g(id='shapes', fill='none'))
 
-    slogan_link = Hyperlink('https://www.phodal.com/', target='_blank')
+    slogan_link = Hyperlink('https://vikbert.github.io/#/', target='_blank')
     shapes.add(dwg.text(author, insert=(84, basic_text_y + 1), fill='#000', fill_opacity=0.3, font_size=120,
                         font_family='Helvetica'))
 
@@ -75,7 +75,7 @@ def generate_article():
 
     shapes = dwg.add(dwg.g(id='shapes', fill='none'))
 
-    slogan_link = Hyperlink('https://www.phodal.com/', target='_blank')
+    slogan_link = Hyperlink('https://vikbert.github.io/#/', target='_blank')
     shapes.add(dwg.text(author, insert=(84, basic_text_y + 1), fill='#000', fill_opacity=0.3, font_size=120,
                         font_family='Helvetica'))
     slogan_link.add(
@@ -144,7 +144,7 @@ def generate_works():
 
     g.add(dwg.rect((0, 0), (phodal_width, height), fill='#5E6772'))
 
-    slogan_link = Hyperlink('https://www.phodal.com/', target='_blank')
+    slogan_link = Hyperlink('https://vikbert.github.io/#/', target='_blank')
     shapes.add(dwg.text(author, insert=(84, basic_text_y + 1), fill='#000', fill_opacity=0.3, font_size=120,
                         font_family='Helvetica'))
     slogan_link.add(
@@ -209,7 +209,7 @@ def generate_design():
     draw_red_point()
     draw_d_arround()
 
-    slogan_link = Hyperlink('https://www.phodal.com/', target='_blank')
+    slogan_link = Hyperlink('https://vikbert.github.io/#/', target='_blank')
     shapes.add(dwg.text(author, insert=(84, basic_text_y + 1), fill='#000', fill_opacity=0.3, font_size=120,
                         font_family='Helvetica'))
     slogan_link.add(
